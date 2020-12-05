@@ -1,0 +1,16 @@
+[Unit]
+Description=BalancerDataBot
+After=multi-user.target
+[Service]
+Environment="BALANCER_DATA_BOT_TOKEN=TOKEN"
+WorkingDirectory=/var/www/balancer-data-bot
+User=root
+Group=root
+ExecStart=/usr/bin/python3 /var/www/balancer-data-bot/main.py
+Type=idle
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=5
+
+[Install]
+WantedBy=multi-user.target
