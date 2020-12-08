@@ -22,3 +22,6 @@ List of requirements
 -------------
     python-telegram-bot
     python-graphql-client
+
+
+created by An Thi Thuy Vu and Vi Nhat Ly
